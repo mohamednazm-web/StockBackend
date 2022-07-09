@@ -12,8 +12,9 @@ public class VendorService {
     @Autowired
     private VendorRepository repository;
 
-    public Vendor saveVendor(Vendor stock) {
-        return repository.save(stock);
+    public Vendor saveVendor(Vendor vendor) {
+        System.out.println("vendor" + vendor);
+        return repository.save(vendor);
     }
 
     public List<Vendor> getVendors() {

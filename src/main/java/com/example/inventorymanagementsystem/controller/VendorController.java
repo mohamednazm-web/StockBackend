@@ -16,6 +16,7 @@ public class VendorController {
 
     @PostMapping("/Vendor")
     public Vendor createVendor(@RequestBody Vendor request) {
+        System.out.println("vendorRequest" + request);
         return service.saveVendor(request);
     }
 
